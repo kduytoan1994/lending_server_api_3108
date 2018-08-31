@@ -227,7 +227,7 @@ module.exports = (app) => {
 
     app.post('/api/wallet/getListOnGoingLoan', (req, res) => {
         var token = req.body.token;
-        var hostId = req.body.id_host;
+        var hostId = req.body.id;
         var lendTemp;
         var kq = [];
 
