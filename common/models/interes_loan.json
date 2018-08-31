@@ -1,0 +1,36 @@
+{
+  "name": "interes_loan",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "money": {
+      "type": "number",
+      "required": true
+    },
+    "status": {
+      "type": "number",
+      "required": true
+    },
+    "rate": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "loan": {
+      "type": "belongsTo",
+      "model": "loan",
+      "foreignKey": "loanId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
