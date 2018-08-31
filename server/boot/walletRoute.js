@@ -237,7 +237,7 @@ module.exports = (app) => {
             })
             .then(loans => {
                 var promises2 = [];
-                console.log('1', hostId +"----"+loans)
+                console.log('1'+ hostId +"----"+loans)
                 // setTimeout(function () {
                 if (loans != null && loans.length > 0) {
                     console.log('2')
