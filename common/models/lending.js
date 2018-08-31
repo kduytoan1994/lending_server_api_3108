@@ -4,7 +4,7 @@ module.exports = function (Lending) {
     Lending.sendEmail = (receiver , html , mailType) =>
         new Promise((resolve, reject) => {
             Lending.app.models.Email.send({
-                to: 'toan.kd@samsung.com',
+                to: receiver,
                 from: "asio.lending@gmail.com",
                 subject: mailType,
                 text: 'my text',
